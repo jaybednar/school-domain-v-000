@@ -1,5 +1,3 @@
-require 'pry'
-
 # code here!
 class School
   attr_reader :roster
@@ -16,7 +14,6 @@ class School
       @roster[student_grade] = []
       @roster[student_grade] << student_name
     end
-    #binding.pry
   end
 
   def grade(grade_num)
