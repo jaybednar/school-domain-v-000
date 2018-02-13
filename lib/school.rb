@@ -3,16 +3,11 @@ require 'pry'
 # code here!
 class School
   attr_reader :roster
-  # attr_reader :add_student,
-
+  
   def initialize(school_name)
     @school_name = school_name
     @roster = {}
   end
-
-  # def roster
-  #   @roster = {}
-  # end
 
   def add_student(student_name, student_grade)
     if @roster.has_key?(student_grade)
